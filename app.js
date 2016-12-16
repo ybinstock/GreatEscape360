@@ -17,7 +17,6 @@ $(document).ready(function() {
   function showSlide1() {
     $(".logo").attr('visible','false');
     $(".slide1").attr('visible', 'true');
-    console.log('slide 1 happening')
   }
 
   setTimeout(showSlide1, 11000);
@@ -26,7 +25,6 @@ $(document).ready(function() {
   function showSlide2() {
     $(".slide1").attr('visible', 'false');
     $(".slide2").attr('visible', 'true');
-    console.log('slide 2 happening')
   }
 
   setTimeout(showSlide2, 21000);
@@ -35,8 +33,6 @@ $(document).ready(function() {
   function showSlide3() {
     $(".slide2").attr('visible', 'false');
     $(".slide3").attr('visible', 'true');
-    console.log('slide 3 happening')
-
   }
 
   setTimeout(showSlide3, 31500);
@@ -45,8 +41,6 @@ $(document).ready(function() {
   function showSlide4() {
     $(".slide3").attr('visible', 'false');
     $(".slide4").attr('visible', 'true');
-    console.log('slide 4 happening')
-
   }
   setTimeout(showSlide4, 41500);
 
@@ -54,8 +48,6 @@ $(document).ready(function() {
   function showSlide5() {
     $(".slide4").attr('visible', 'false');
     $(".slide5").attr('visible', 'true');
-    console.log('slide 5 happening')
-
   }
 
   setTimeout(showSlide5, 51500);
