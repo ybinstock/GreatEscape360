@@ -1,17 +1,29 @@
 <html>
+
 <head>
+  <title>Great Escape</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
   <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  
+
 </head>
 <body>
 
 
 <a-scene>
+  <a-assets>
+    <video id="greatescapevideo" autoplay loop="true" src="video2.mp4" playsinline />
+
+  </a-assets>
+
   <a-camera wasd-controls="enabled: false"> </a-camera>
 
-
-  <a-videosphere src="video2.mp4"></a-videosphere>
+  <a-videosphere src="#greatescapevideo"></a-videosphere>
 
   <a-image id="logo" class="logo" src="logo.png" position="0 2 -2" rotation="0 0 0"></a-image>
   <a-image id="logo" class="logo" src="logo.png" position="1 2 2"  rotation="0 180 0"></a-image>
